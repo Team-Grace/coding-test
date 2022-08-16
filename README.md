@@ -8,8 +8,7 @@
 
 ### 😋 Commit Message Convention
 
-1. 백준: Add(minjae}): ~~~ '
-2. 프로그래머스: Add(yeonjae): ~~~ '
+- Add(minjae): ~~~
 
 <br />
 
@@ -29,19 +28,12 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-//전역 변수
-let input = [];
-
-function solution() {
-  //풀이 코드...
-}
+const input = [];
 
 rl.on("line", function (line) {
   input.push(line);
 }).on("close", function () {
-  //입력값 받는 코드...
-
-  solution();
+  // 풀이
 });
 ```
 
