@@ -34,6 +34,12 @@
 
 <br />
 
+## 😋 Pull Request 작성 예시
+
+<img width="932" alt="스크린샷 2022-08-17 오전 12 38 44" src="https://user-images.githubusercontent.com/64779472/184920949-8bcb7349-1be8-465e-8df0-4cb5ebeb444e.png">
+
+<br />
+
 ### 😋 Commit Message Convention
 
 - add: 풀이 코드 추가
