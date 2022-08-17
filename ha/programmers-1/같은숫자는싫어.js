@@ -1,3 +1,3 @@
 function solution(arr) {
-  // 풀이
+  // 풀이2
 }
