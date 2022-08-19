@@ -7,6 +7,5 @@ function solution(s) {
   else {
     return s[AverageIdx]
   }    
-  
 }
   
