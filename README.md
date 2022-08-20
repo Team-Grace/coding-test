@@ -17,7 +17,7 @@
 
 - [전민재](https://github.com/ssi02014)
   - [블로그](https://blog.naver.com/ssi02014)
-- [유운우](https://github.com/yunwoo-yu)
+- [유윤우](https://github.com/yunwoo-yu)
   - [블로그](https://frontend-development.tistory.com/)
 - [정연재](https://github.com/YeonnJ)
   - [블로그](https://yeonns.tistory.com/)
