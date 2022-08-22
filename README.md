@@ -13,6 +13,19 @@
 
 <br />
 
+## 🧑‍💻 팀원
+
+- [전민재](https://github.com/ssi02014)
+  - [블로그](https://blog.naver.com/ssi02014)
+- [유윤우](https://github.com/yunwoo-yu)
+  - [블로그](https://frontend-development.tistory.com/)
+- [정연재](https://github.com/YeonnJ)
+  - [블로그](https://yeonns.tistory.com/)
+- [김하연](https://github.com/hayeonn2)
+  - [블로그](https://hayeonn.tistory.com/)
+
+<br />
+
 ## 🧑‍💻 스터디 목표
 
 - 프로그래머스 레벨2 풀기, 백준 solved class3 달성하기
