@@ -1,4 +1,4 @@
 function solution(seoul) {
-  const idx = seoul.indexOf("Kim");
-  return `김서방은 ${idx}에 있다`;
+  const kimIdx = seoul.indexOf("Kim");
+  return `김서방은 ${kimIdx}에 있다`;
 }
