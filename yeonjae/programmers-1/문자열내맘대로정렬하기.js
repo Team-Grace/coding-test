@@ -1,6 +1,6 @@
 function solution(strings, n) {
 
-  strings.sort (function (a,b) {
+  strings.sort ((a,b) => {
     const firstVal = a[n];
     const secondVal = b[n];
         
