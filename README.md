@@ -65,6 +65,18 @@ refac: 프로그래머스 레벨1 같은 숫자는 싫어 문제 리팩토링
 
 <br />
 
+## 프로그래머스 레벨1
+
+| 번호 | 문제 출처                                                                             | 풀이                                                                                                           |
+| ---- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 1    | [2016년](https://school.programmers.co.kr//learn/courses/30/lessons/12901)            | [2016년.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/2016년.js)             |
+| 2    | [3진법 뒤집기](https://school.programmers.co.kr//learn/courses/30/lessons/68935)      | [3진법-뒤집기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/3진법-뒤집기.js) |
+| 3    | [3진법 뒤집기 문제](https://school.programmers.co.kr//learn/courses/30/lessons/42748) | [3진법 뒤집기 풀이](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)    |
+| 3    | [K번째수](https://school.programmers.co.kr//learn/courses/30/lessons/42748)           | [K번째수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)           |
+| 3    | [K번째수](https://school.programmers.co.kr//learn/courses/30/lessons/42748)           | [K번째수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)           |
+
+<br />
+
 ## 🏃 백준 - 예시
 
 ```javascript
