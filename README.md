@@ -13,7 +13,9 @@
 
 <br />
 
-## 🧑‍💻 팀원
+## 🧑‍💻 스터디원
+
+[![contributors](https://contrib.rocks/image?repo=Team-Grace/coding-test)](https://github.com/Team-Grace/coding-test/graphs/contributors)
 
 - [전민재](https://github.com/ssi02014)
   - [블로그](https://blog.naver.com/ssi02014)
