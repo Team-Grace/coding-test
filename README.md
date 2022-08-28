@@ -47,6 +47,27 @@
 
 <br />
 
+## 🗂 풀이 진행 테이블
+
+### 1️⃣ 프로그래머스 레벨1
+
+- 10문제 클리어 👑
+
+| 번호 | 문제 출처                                                                                      | 알고리즘 유형         |
+| ---- | ---------------------------------------------------------------------------------------------- | --------------------- |
+| 1    | [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916)      | 문자열                |
+| 2    | [가운데 글자 가져오기](https://school.programmers.co.kr/learn/courses/30/lessons/12903)        | 문자열                |
+| 3    | [3진법 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/68935)                | 구현                  |
+| 4    | [수박수박수박수박수](https://school.programmers.co.kr/learn/courses/30/lessons/12922)          | 문자열                |
+| 5    | [서울에서 김서방 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/12919)        | 배열                  |
+| 6    | [나머지가 1이 되는 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/87389)   | 구현                  |
+| 7    | [문자열 내 마음대로 정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915) | 배열, 정렬            |
+| 8    | [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644)         | 구현, 배열, 완전 탐색 |
+| 9    | [문자열을 정수로 바꾸기](https://school.programmers.co.kr/learn/courses/30/lessons/12925)      | 구현                  |
+| 10   | [문자열 내림차순 배치하기](https://school.programmers.co.kr/learn/courses/30/lessons/12917)    | 문자열, 정렬          |
+
+<br />
+
 ## 😋 Pull Request 작성 예시
 
 <img width="932" alt="스크린샷 2022-08-17 오전 12 38 44" src="https://user-images.githubusercontent.com/64779472/184920949-8bcb7349-1be8-465e-8df0-4cb5ebeb444e.png">
@@ -65,20 +86,6 @@ ex)
 add: 프로그래머스 레벨1 같은 숫자는 싫어 문제 풀이
 refac: 프로그래머스 레벨1 같은 숫자는 싫어 문제 리팩토링
 ```
-
-<br />
-
-## 🗂 풀이 테이블
-
-### 1️⃣ 프로그래머스 레벨1
-
-| 번호 | 문제 출처                                                                             | 풀이                                                                                                           |
-| ---- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| 1    | [2016년](https://school.programmers.co.kr//learn/courses/30/lessons/12901)            | [2016년.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/2016년.js)             |
-| 2    | [3진법 뒤집기](https://school.programmers.co.kr//learn/courses/30/lessons/68935)      | [3진법-뒤집기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/3진법-뒤집기.js) |
-| 3    | [3진법 뒤집기 문제](https://school.programmers.co.kr//learn/courses/30/lessons/42748) | [3진법 뒤집기 풀이](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)    |
-| 3    | [K번째수](https://school.programmers.co.kr//learn/courses/30/lessons/42748)           | [K번째수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)           |
-| 3    | [K번째수](https://school.programmers.co.kr//learn/courses/30/lessons/42748)           | [K번째수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/K번째수.js)           |
 
 <br />
 
