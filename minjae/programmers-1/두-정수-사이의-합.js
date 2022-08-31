@@ -3,7 +3,7 @@ function solution1(a, b) {
   const maxNum = Math.max(a, b);
   let result = 0;
 
-  for (let i = minNum; i < maxNum + 1; i++) {
+  for (let i = minNum; i <= maxNum; i++) {
     result += i;
   }
 
@@ -14,7 +14,7 @@ function solution2(...args) {
   const [minNum, maxNum] = args.sort((a, b) => a - b);
   let result = 0;
 
-  for (let i = minNum; i < maxNum + 1; i++) {
+  for (let i = minNum; i <= maxNum; i++) {
     result += i;
   }
 
