@@ -1,13 +1,29 @@
-function solution(d, budget) {
-  let answer = 0;
+function solution1(d, budget) {
+  let result = 0;
 
   d.sort((a, b) => a - b).reduce((acc, cur) => {
     acc += cur;
-    if (acc <= budget) answer++;
+    if (acc <= budget) result++;
     return acc;
   }, 0);
 
-  return answer;
+  return result;
+}
+
+function solution2(d, budget) {
+  let result = 0;
+  let sum = 0;
+
+  d.sort((a, b) => a - b);
+
+  for (const amount of d) {
+    sum += amount;
+
+    if (sum > budget) return result;
+    result++;
+  }
+
+  return result;
 }
 
 /**
