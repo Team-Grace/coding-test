@@ -1,8 +1,8 @@
 function solution1(s) {
-  const temp = Number(s);
+  const convertedToNumber = Number(s);
 
   if (s.length === 4 || s.length === 6) {
-    if (temp === parseInt(s)) return true;
+    if (convertedToNumber === parseInt(s)) return true;
   }
   return false;
 }
