@@ -19,17 +19,17 @@ function getIsUpperCase(ascii) {
 function getAsciiToString(ascii, n) {
   const nextAscii = ascii + n;
 
+  // 대문자
   if (getIsUpperCase(ascii)) {
-    // 대문자
     if (nextAscii > 90) {
       return String.fromCharCode(nextAscii - 90 + 64);
     }
-  } else {
-    // 소문자
-    if (nextAscii > 122) {
-      return String.fromCharCode(nextAscii - 122 + 96);
-    }
   }
+  // 소문자
+  if (nextAscii > 122) {
+    return String.fromCharCode(nextAscii - 122 + 96);
+  }
+
   return String.fromCharCode(nextAscii);
 }
 
