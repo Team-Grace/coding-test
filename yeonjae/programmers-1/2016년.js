@@ -6,7 +6,7 @@ function solution(a, b) {
 
 /*
 (풀이)
-new Date를 사용해서 쉽게 푼것같다.
+new Date를 사용해서 쉽게 푼것같다. 
 주의할 점은 month는 일반 월이 아니라 인덱스로 되어있어서 1월이라면 0이 들어가야한다. (a -> a-1)
 
 2016년 a월 b일 을 new Date객체를 사용해서 구한후,
