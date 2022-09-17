@@ -1,5 +1,7 @@
 function solution(d, budget) {
-  const departmentBudget = d.sort((a, b) => {
+  const departmentBudget = [];
+
+  departmentBudget = d.sort((a, b) => {
     return a - b;
   });
 
