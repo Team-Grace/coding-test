@@ -19,3 +19,11 @@ function solution(num) {
 
   return result;
 }
+
+/*
+(풀이)
+while문으로 result가 501 이 될때까지 루프를 돌리고 
+짝수일때는 나누기 2 홀수일때는 곱하기 3 + 1 을 해주고
+result 값이 500이 될때까지 num이 1이 되지않는다면 result에 -1을 할당하고 while문 종료
+else if 로 달아줬어야하는데 따로따로 if문을 쓰니 적용이 안되서 엄청 고생했다..
+*/
