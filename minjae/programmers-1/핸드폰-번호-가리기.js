@@ -4,6 +4,20 @@ function solution(phone_number) {
   }, "");
 }
 
+function solution(phone_number) {
+  let result = "";
+
+  for (const idx in phone_number) {
+    if (idx < phone_number.length - 4) {
+      result += "*";
+    } else {
+      result += phone_number[idx];
+    }
+  }
+
+  return result;
+}
+
 /**
  * (풀이)
  * phone_number를 배열로 변환 후에 reduce를 이용해서 순회하는데,
