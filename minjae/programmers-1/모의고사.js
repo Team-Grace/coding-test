@@ -14,17 +14,9 @@ function solution(answers) {
 }
 
 function getCounters(answers, patterns) {
-  const counters = [0, 0, 0];
-
-  answers.forEach((answer, i) => {
-    patterns.forEach((pattern, j) => {
-      if (answer === pattern[i % pattern.length]) {
-        counters[j]++;
-      }
-    });
+  return patterns.map((pattern) => {
+    return answers.filter((v, j) => v === pattern[j % pattern.length]).length;
   });
-
-  return counters;
 }
 
 /**
