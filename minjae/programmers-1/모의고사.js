@@ -7,16 +7,21 @@ function solution(answers) {
   const counters = getCounters(answers, patterns);
   const maxNum = Math.max(...counters);
 
-  return counters.reduce((acc, cur, i) => {
-    if (cur === maxNum) acc.push(i + 1);
-    return acc;
-  }, []);
+  return getResult(counters, maxNum);
 }
 
 function getCounters(answers, patterns) {
   return patterns.map((pattern) => {
-    return answers.filter((v, j) => v === pattern[j % pattern.length]).length;
+    return answers.filter((answer, j) => answer === pattern[j % pattern.length])
+      .length;
   });
+}
+
+function getResult(counters, maxNum) {
+  return counters.reduce((acc, cur, i) => {
+    if (cur === maxNum) acc.push(i + 1);
+    return acc;
+  }, []);
 }
 
 /**
