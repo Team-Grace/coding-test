@@ -1,6 +1,5 @@
 function solution(participant, completion) {
-  const player = [];
-  let answer = "";
+  const player = {};
 
   for (let i = 0; i < participant.length; i++) {
     if (player[participant[i]] === undefined) {
