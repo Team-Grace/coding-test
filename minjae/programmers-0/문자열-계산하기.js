@@ -2,12 +2,12 @@ function solution(my_string) {
   const arr = my_string.split(" ");
   let result = Number(arr[0]);
 
-  for (let i = 1; i < arr.length; i++) {
+  arr.forEach((el, i) => {
     const next = Number(arr[i + 1]);
 
     if (arr[i] === "+") result += next;
     else if (arr[i] === "-") result -= next;
-  }
+  });
 
   return result;
 }
