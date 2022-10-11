@@ -9,13 +9,14 @@ function solution(n, lost, reserve) {
   for (let i = 0; i < totalStudent.length; i++) {
     if (lost.includes(i + 1)) {
       totalStudent[i] -= 1;
-    } else if (reserve.includes(i + 1)) {
+    }
+    if (reserve.includes(i + 1)) {
       totalStudent[i] += 1;
     }
   }
 
   //여유분이 있으면서 옆학생한테 빌려줄수있는경우
-  for (let i = 0; i < totalStudent.length; i++) {
+  for (let i in totalStudent) {
     if (totalStudent[i] == 2 && totalStudent[i - 1] == 0) {
       totalStudent[i] -= 1;
       totalStudent[i - 1] += 1;
