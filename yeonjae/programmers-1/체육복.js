@@ -9,7 +9,8 @@ function solution(n, lost, reserve) {
   for (let i = 0; i < totalStudent.length; i++) {
     if (lost.includes(i + 1)) {
       totalStudent[i] -= 1;
-    } else if (reserve.includes(i + 1)) {
+    }
+    if (reserve.includes(i + 1)) {
       totalStudent[i] += 1;
     }
   }
