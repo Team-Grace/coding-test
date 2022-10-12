@@ -2,7 +2,7 @@ function solution(my_string) {
   const arr = my_string.split(" ");
   let result = Number(arr[0]);
 
-  arr.forEach((el, i) => {
+  arr.forEach((_, i) => {
     const next = Number(arr[i + 1]);
 
     if (arr[i] === "+") result += next;
