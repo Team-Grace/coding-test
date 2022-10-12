@@ -1,6 +1,6 @@
 function solution(s) {
   const arr = s.split(" ");
-  let result = [];
+  const result = [];
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === "Z") {
