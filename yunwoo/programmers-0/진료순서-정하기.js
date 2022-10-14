@@ -1,11 +1,14 @@
 function solution(emergency) {
   const result = [];
+  const emergencyScoreArrray = [...emergency];
 
   for (let i = 1; i <= emergency.length; i++) {
-    const highNum = emergency.indexOf(Math.max(...emergency));
+    const highNum = emergencyScoreArrray.indexOf(
+      Math.max(...emergencyScoreArrray)
+    );
 
     result[highNum] = i;
-    emergency[highNum] = 0;
+    emergencyScoreArrray[highNum] = 0;
   }
 
   return result;
