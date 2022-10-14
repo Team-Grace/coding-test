@@ -1,5 +1,5 @@
 function solution(n) {
-  let result = new Set([]);
+  const result = new Set();
 
   for (let i = 2; i < n + 1; i++) {
     while (n % i === 0) {
