@@ -1,12 +1,10 @@
-function solution(s) {
-  const numbers = [];
+const numbers = [];
 
-  for (const el of s.split(" ")) {
-    el === "Z" ? numbers.pop() : numbers.push(el);
-  }
-
-  return numbers.reduce((acc, cur) => acc + +cur, 0);
+for (const el of s.split(" ")) {
+  el === "Z" ? numbers.pop() : numbers.push(el);
 }
+
+return numbers.reduce((acc, cur) => acc + +cur, 0);
 
 /**
  * 풀이
@@ -28,5 +26,5 @@ function solution(s) {
     해봤는데.. 케이스 2번과 7번이 통과하지않음..
 
     결국 풀긴했는데 온전히 스스로 생각하지 못해서 아쉬웠다..
-    쉽게 풀 수 있던 문제였는데!
+
  */
