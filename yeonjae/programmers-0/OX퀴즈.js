@@ -3,15 +3,17 @@ function solution(quiz) {
   let result;
 
   for (let i = 0; i < quiz.length; i++) {
-    const newArr = quiz[i].split(" ");
-    if (newArr[1] === "-") {
+    const calculationArr = quiz[i].split(" ");
+    if (calculationArr[1] === "-") {
       result =
-        parseInt(newArr[0]) - parseInt(newArr[2]) === parseInt(newArr[4])
+        parseInt(calculationArr[0]) - parseInt(calculationArr[2]) ===
+        parseInt(calculationArr[4])
           ? "O"
           : "X";
     } else {
       result =
-        parseInt(newArr[0]) + parseInt(newArr[2]) === parseInt(newArr[4])
+        parseInt(calculationArr[0]) + parseInt(calculationArr[2]) ===
+        parseInt(calculationArr[4])
           ? "O"
           : "X";
     }
