@@ -4,7 +4,10 @@ function solution(A, B) {
   if (A === B) return 0;
 
   for (let i = 0; i < A.length; i++) {
-    extrudedStr = extrudedStr.slice(-1) + extrudedStr.slice(0, A.length - 1);
+    const lastChar = extrudedStr.slice(-1);
+    const slicedStr = extrudedStr.slice(0, -1);
+
+    extrudedStr = lastChar + slicedStr;
 
     if (extrudedStr === B) return i + 1;
   }
