@@ -35,9 +35,9 @@ function solution(spell, dic) {
 
 // 정렬을 통한 문제
 function solution(spell, dic) {
-  return dic.find((str) => getSortStr(str) === getSortStr(spell.join("")))
-    ? 1
-    : 2;
+  const sortedSpellStr = getSortStr(spell.join(""));
+
+  return dic.find((str) => getSortStr(str) === sortedSpellStr) ? 1 : 2;
 }
 
 function getSortStr(str) {
