@@ -43,7 +43,5 @@ function solution(numbers) {
   };
   const regex = /zero|one|two|three|four|five|six|seven|eight|nine/g;
 
-  return +numbers.replace(regex, (v) => {
-    return numberMappingObj[v];
-  });
+  return +numbers.replace(regex, (v) => numberMappingObj[v]);
 }
