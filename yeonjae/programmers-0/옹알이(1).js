@@ -1,21 +1,11 @@
 function solution(babbling) {
-  const arr = ["aya", "ye", "woo", "ma"];
-  let answer = 0;
-  let count = 0;
+  return babbling.reduce((acc, cur) => {
+    const regex = /aya|ye|woo|ma/g;
+    const replacedBabbling = cur.replace(regex, "");
 
-  for (let i = 0; i < babbling.length; i++) {
-    if (babbling[i] === arr[i]) answer++;
-    else if (babbling[i] !== arr[i]) {
-      let split = babbling[i].split("").join("");
-      for (let j = 0; j < split.length; j++) {
-        if (split.includes(arr[i])) {
-          count++;
-          if (count < 1) {
-            answer++;
-          }
-        }
-      }
-      return answer;
-    }
-  }
+    return replacedBabbling === "" ? acc + 1 : acc;
+  }, 0);
 }
+
+//너무 복잡해져서,,, 민재님 코드 참고
+//정규표현식 활용하는 코드가 제일 깔끔할 것 같다

@@ -1,5 +1,5 @@
 function solution(numbers) {
-  const number = [
+  const strNumberArr = [
     "zero",
     "one",
     "two",
@@ -12,8 +12,8 @@ function solution(numbers) {
     "nine",
   ];
 
-  for (let i = 0; i < number.length; i++) {
-    numbers = numbers.split(number[i]).join(i);
+  for (let i = 0; i < strNumberArr.length; i++) {
+    numbers = numbers.split(strNumberArr[i]).join(i);
   }
 
   return Number(numbers);
