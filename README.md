@@ -39,6 +39,7 @@
 
 - [2022년 8월](https://water-orangutan-97f.notion.site/2022-8-ae938e86fe3a403face1187716fdf909)
 - [2022년 9월](https://www.notion.so/2022-9-edacb753d9684ec280d8b4af8085be8f)
+- [2022년 10월](https://www.notion.so/2022-10-8b8edd6f1781469c88b540968ed8f2c9)
 
 <br />
 
