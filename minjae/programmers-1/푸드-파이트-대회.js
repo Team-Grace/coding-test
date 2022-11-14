@@ -4,21 +4,16 @@ function solution(food) {
     .reverse()
     .map((el) => el - (el % 2));
 
-  const result = foodCounts.reduce(
-    (acc, cur, i) => {
-      const numberOfFood = foodCounts.length - i;
+  return foodCounts.reduce((acc, cur, i) => {
+    const numberOfFood = foodCounts.length - i;
 
-      while (cur) {
-        acc = [numberOfFood, ...acc, numberOfFood];
-        cur -= 2;
-      }
+    while (cur) {
+      acc = `${numberOfFood}${acc}${numberOfFood}`;
+      cur -= 2;
+    }
 
-      return acc;
-    },
-    [0]
-  );
-
-  return result.join("");
+    return acc;
+  }, "0");
 }
 
 // repeat풀이 (하연님 풀이)
