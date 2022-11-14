@@ -1,3 +1,4 @@
+// 리팩토링
 function solution(food) {
   const foodCounts = food
     .slice(1)
@@ -8,7 +9,7 @@ function solution(food) {
     const numberOfFood = foodCounts.length - i;
 
     while (cur) {
-      acc = `${numberOfFood}${acc}${numberOfFood}`;
+      acc = numberOfFood + acc + numberOfFood;
       cur -= 2;
     }
 
