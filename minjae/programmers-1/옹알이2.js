@@ -4,14 +4,11 @@ function solution(babbling) {
 
   return babbling.reduce((acc, cur) => {
     const replacedDoubleBabbling = cur.replace(doubleRegex, "X");
+    const replacedSingleBabbling = replacedDoubleBabbling.replace(
+      singleRegex,
+      ""
+    );
 
-    if (!replacedDoubleBabbling.includes("X")) {
-      const replacedSingleBabbling = cur.replace(singleRegex, "");
-
-      if (!replacedSingleBabbling) {
-        return acc + 1;
-      }
-    }
-    return acc;
+    return replacedSingleBabbling ? acc : acc + 1;
   }, 0);
 }
