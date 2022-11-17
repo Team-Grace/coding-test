@@ -1,7 +1,7 @@
 function solution(X, Y) {
-  let answer = "";
   const xArr = [...X];
   const yArr = [...Y];
+  let answer = "";
 
   for (let i = 0; i < 10; i++) {
     const xCount = xArr.filter((item) => item === String(i)).length;
