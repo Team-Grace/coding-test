@@ -1,10 +1,5 @@
 function getBinaryMap(arr, n) {
-  return arr.map((el) => {
-    const binary = el.toString(2);
-    const blank = "0".repeat(n - binary.length);
-
-    return blank + binary;
-  });
+  return arr.map((el) => el.toString(2).padStart(n, "0"));
 }
 
 function solution(n, arr1, arr2) {
