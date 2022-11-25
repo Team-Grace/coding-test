@@ -12,12 +12,10 @@ function getLottoRanking(winNumber, myNumber, rank) {
   let matchedNumber = 0;
 
   for (el of myNumber) {
-    const MatchedIdx = winNumber.indexOf(el);
+    const matchedIdx = winNumber.indexOf(el);
 
-    if (MatchedIdx !== -1) matchedNumber++;
-    if (rank === "highRank" && el === 0) {
-      matchedNumber++;
-    }
+    if (matchedIdx !== -1) matchedNumber++;
+    if (rank === "highRank" && el === 0) matchedNumber++;
   }
 
   return ranking[matchedNumber];
