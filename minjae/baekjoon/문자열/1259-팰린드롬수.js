@@ -13,20 +13,20 @@ rl.on("line", function (line) {
   let result = "";
 
   for (let i = 0; i < input.length - 1; i++) {
-    const mid = Math.floor(input[i].length / 2);
+    const curItem = input[i];
+    const mid = Math.floor(curItem.length / 2);
     let isPalindrome = true;
 
     for (let j = 0; j < mid; j++) {
-      const start = input[i][j];
-      const end = input[i][input[i].length - j - 1];
+      const start = curItem[j];
+      const end = curItem[curItem.length - j - 1];
 
       if (start !== end) {
         isPalindrome = false;
-        result += `no\n`;
         break;
       }
     }
-    isPalindrome && (result += `yes\n`);
+    isPalindrome ? (result += `yes\n`) : (result += `no\n`);
   }
   console.log(result);
 });
