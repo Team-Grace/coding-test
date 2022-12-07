@@ -9,18 +9,18 @@ const input = [];
 rl.on("line", function (line) {
   input.push(line);
 }).on("close", function () {
-  const inputNum = +input[0];
+  const n = +input[0];
   const constructors = [];
 
-  for (let i = 1; i < inputNum; i++) {
+  for (let i = 1; i < n; i++) {
     const strValue = String(i);
     let decompositionSum = i;
 
     for (let j = 0; j < strValue.length; j++) {
-      decompositionSum += parseInt(strValue[j]);
+      decompositionSum += +strValue[j];
     }
 
-    if (decompositionSum === inputNum) constructors.push(i);
+    if (decompositionSum === n) constructors.push(i);
   }
 
   constructors.length > 0
