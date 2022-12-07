@@ -18,9 +18,10 @@ rl.on("line", function (line) {
   while (true) {
     startNum++;
     let sum = startNum;
+    const startStr = String(startNum);
 
-    for (let i = 0; i < String(startNum).length; i++) {
-      sum = sum + Number(String(startNum).charAt(i));
+    for (let i = 0; i < startStr.length; i++) {
+      sum = sum + Number(startStr[i]);
     }
     if (sum === n) {
       answer = startNum;
