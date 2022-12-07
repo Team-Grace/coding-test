@@ -20,6 +20,7 @@ rl.on("line", function (line) {
     for (let j = 0; j < convertedNumber.length; j++) {
       currentValue += +convertedNumber[j];
     }
+
     if (currentValue === n) constructors.push(i);
   }
   console.log(constructors.length ? Math.min(...constructors) : 0);
