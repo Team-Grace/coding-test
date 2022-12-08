@@ -14,15 +14,10 @@ rl.on("line", function (line) {
   let count = 1;
   let range = 2;
 
-  if (inputData === 1) {
-    console.log(1);
-  } else {
-    while (range <= inputData) {
-      range = range + 6 * count;
-      count++;
-    }
-    console.log(count);
+  while (range <= inputData) {
+    range += 6 * count++;
   }
+  console.log(count);
 });
 
 /**
