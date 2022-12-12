@@ -23,8 +23,9 @@ rl.on("line", function (line) {
     for (let j = i + 1; j < cardNum; j++) {
       for (let k = j + 1; k < cardNum; k++) {
         tempSum = numList[i] + numList[j] + numList[k];
-        if (tempSum > result && tempSum <= dealNum) {
-          result = tempSum;
+
+        if (tempSum <= dealNum) {
+          result = Math.max(result, tempSum);
         }
       }
     }
