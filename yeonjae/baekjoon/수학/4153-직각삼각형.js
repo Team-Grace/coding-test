@@ -14,19 +14,16 @@ rl.on("line", function (line) {
   let result = "";
 
   for (let i = 0; i < input.length - 1; i++) {
-    const [a, b, c] = input[i]
+    const [len1, len2, longLen] = input[i]
       .split(" ")
       .map(Number)
       .sort((a, b) => a - b);
 
     //피타고라스 정리
-    if (a ** 2 + b ** 2 === c ** 2) {
-      result += "right\n";
-    } else {
-      result += "wrong\n";
-    }
-  }
+    const isTriangle = longLen ** 2 === len1 ** 2 + len2 ** 2;
 
+    result += isTriangle ? `right\n` : `wrong\n`;
+  }
   console.log(result);
 });
 
