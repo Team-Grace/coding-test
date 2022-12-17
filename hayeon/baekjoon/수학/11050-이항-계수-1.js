@@ -10,30 +10,31 @@ rl.on("line", function (line) {
   input.push(line);
 }).on("close", function () {
   // 풀이
+  const setFactorial = (num) => {
+    let factorial = 1;
+
+    for (let i = 1; i <= num; i++) {
+      factorial *= i;
+    }
+    return factorial;
+  };
+
   const [naturalNum, integer] = input[0].split(" ").map(Number);
-  let numerator = 1;
-  let denominator = 1;
-  let subtraction = 1;
   let result = 0;
 
-  for (let i = 1; i <= naturalNum; i++) {
-    numerator *= i;
-  }
-  for (let j = 1; j <= integer; j++) {
-    denominator *= j;
-  }
-  for (let k = 1; k <= naturalNum - integer; k++) {
-    subtraction *= k;
-  }
+  const numerator = setFactorial(naturalNum);
+  const denominator =
+    setFactorial(integer) * setFactorial(naturalNum - integer);
 
-  result = Math.floor(numerator / (denominator * subtraction));
+  result = Math.floor(numerator / denominator);
 
   console.log(result);
 });
 
 /**
  * 풀이
- * 간단하게 모두 반복문을 돌려서 하나씩 넣어줬다..
- * 뭔가 좀 무식하게 푼거같아서 더 효율적인 방법이 있을 것 같은데 잘 모르겠다...
- * 그래도 공식을 알고 푸니까 생각하기 쉬웠던 것 같다.
+ * 민재님이 반복적인 코드라고 한 말에 저번에 함수로 빼는 방법이 생각이 났다.
+ * 왜 풀때는 생각을 못했을까.... 반복문을 함수로 빼주고
+ * 변수를 넣어서 결과값에 넣어 반환해주면 됐다!
+ * 백준에 제출하니까 시간도 훨씬 줄어드는걸 확인할 수 있었다.
  */
