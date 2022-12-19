@@ -47,8 +47,7 @@ rl.on("line", function (line) {
   for (let i = 0; i < +n; i++) {
     result += alpha[l[i]] * r;
 
-    r *= decimal;
-    r %= m;
+    r = (r * decimal) % m;
   }
 
   console.log(result % m);
