@@ -14,5 +14,5 @@ rl.on("line", function (line) {
     .sort((a, b) => a.length - b.length || a.localeCompare(b));
   const setWords = new Set(words);
 
-  console.log(Array.from(setWords).join("\n"));
+  console.log([...setWords].join("\n"));
 });
