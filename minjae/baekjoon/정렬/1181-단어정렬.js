@@ -12,7 +12,7 @@ rl.on("line", function (line) {
   const words = input
     .slice(1)
     .sort((a, b) => a.length - b.length || a.localeCompare(b));
-  const setWords = new Set(words);
+  const wordsSet = new Set(words);
 
-  console.log([...setWords].join("\n"));
+  console.log([...wordsSet].join("\n"));
 });
