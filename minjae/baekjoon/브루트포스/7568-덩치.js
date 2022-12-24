@@ -17,11 +17,11 @@ rl.on("line", function (line) {
     let rank = 0;
 
     for (let j = 0; j < n; j++) {
-      const [curtWeight, curHeight] = studentList[i];
+      const [curWeight, curHeight] = studentList[i];
       const [nextWeight, nextHeight] = studentList[j];
 
       if (i === j) continue;
-      if (curtWeight < nextWeight && curHeight < nextHeight) {
+      if (curWeight < nextWeight && curHeight < nextHeight) {
         rank++;
       }
     }
