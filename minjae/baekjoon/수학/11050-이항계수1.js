@@ -6,9 +6,10 @@ const rl = readline.createInterface({
 
 const input = [];
 
-const factorial = (num) => {
+// 함수 선언문(화살표 함수)
+const getFactorial = (num) => {
   if (num < 2) return 1;
-  return num * factorial(num - 1);
+  return num * getFactorial(num - 1);
 };
 
 rl.on("line", function (line) {
@@ -16,8 +17,13 @@ rl.on("line", function (line) {
 }).on("close", function () {
   const [N, K] = input[0].split(" ").map(Number);
 
-  const molecule = factorial(N);
-  const denominator = factorial(K) * factorial(N - K);
+  const getFactorial = () => {
+    if (num < 2) return 1;
+    return num * getFactorial(num - 1);
+  };
+
+  const molecule = getFactorial(N);
+  const denominator = getFactorial(K) * getFactorial(N - K);
 
   console.log(molecule / denominator);
 });
