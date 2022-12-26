@@ -11,15 +11,12 @@ rl.on("line", function (line) {
 }).on("close", function () {
   let result = "";
 
-  const members = input
+  input
     .slice(1)
-    .map((member) => {
-      const [age, name] = member.split(" ");
-      return { age: +age, name };
-    })
-    .sort((a, b) => a.age - b.age)
-    .forEach(({ age, name }) => {
-      result += `${age} ${name}\n`;
+    .map((member) => member.split(" "))
+    .sort((a, b) => a[0] - b[0])
+    .forEach(([age, member]) => {
+      result += `${age} ${member}\n`;
     });
 
   console.log(result);
