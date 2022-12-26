@@ -10,7 +10,6 @@ rl.on("line", function (line) {
   input.push(line);
 }).on("close", function () {
   // 풀이
-  // const test = +input[0];
   const members = input
     .slice(1, input.length)
     .map((member) => ({
@@ -29,11 +28,3 @@ rl.on("line", function (line) {
  * 그래서 케이스들만 가지고 풀 수 있는 방법을 생각해보다 회원들의 나이와 이름을 갖는 객체 배열을 만들었다.
  * 배열을 나이로 비교해 정렬하고 다시 문자열로 만들어서 붙여 출력한다.
  */
-
-/*
-input.shift();
-
-const result = input.sort((a, b) => a.split(" ")[0] - b.split(" ")[0]);
-
-console.log(result.join("\n"));
-*/
