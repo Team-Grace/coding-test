@@ -16,12 +16,14 @@ rl.on("line", function (line) {
   let count = 0;
 
   while (queue.length) {
+    const removedFirstPerson = queue.shift();
+
     count++;
 
     if (count % k === 0) {
-      result.push(queue.shift());
+      result.push(removedFirstPerson);
     } else {
-      queue.push(queue.shift());
+      queue.push(removedFirstPerson);
     }
   }
 
