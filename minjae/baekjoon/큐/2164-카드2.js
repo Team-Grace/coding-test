@@ -11,13 +11,9 @@ rl.on("line", function (line) {
 }).on("close", function () {
   const n = +input[0];
   const cardList = Array.from({ length: n }, (_, idx) => idx + 1);
-  let currentIdx = 0;
-  let lastIdx = cardList.length;
 
-  for (let i = 0; i < n - 2; i++) {
-    currentIdx++;
-
-    cardList[lastIdx++] = cardList[currentIdx++];
+  for (let i = 1; i <= n - 2; i++) {
+    cardList.push(cardList[2 * i - 1]);
   }
 
   console.log(cardList.at(-1));
