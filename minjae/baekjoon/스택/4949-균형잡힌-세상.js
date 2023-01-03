@@ -15,7 +15,7 @@ rl.on("line", function (line) {
 
   strList.forEach((str) => {
     const stack = [];
-    const bracketObj = {
+    const bracketCompareObj = {
       ")": "(",
       "]": "[",
     };
@@ -28,7 +28,7 @@ rl.on("line", function (line) {
 
       // ')', ']' 케이스
       if (char === ")" || char === "]") {
-        if (stack.at(-1) === bracketObj[char]) {
+        if (stack.at(-1) === bracketCompareObj[char]) {
           stack.pop();
         } else {
           stack.push(char);
