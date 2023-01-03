@@ -21,16 +21,13 @@ rl.on("line", function (line) {
     };
 
     for (const char of str) {
-      const bracketValues = Object.values(bracketObj);
-      const bracketKeys = Object.keys(bracketObj);
-
       // '(', '[' 케이스
-      if (bracketValues.includes(char)) {
+      if (char === "(" || char === "[") {
         stack.push(char);
       }
 
       // ')', ']' 케이스
-      if (bracketKeys.includes(char)) {
+      if (char === ")" || char === "]") {
         if (stack.at(-1) === bracketObj[char]) {
           stack.pop();
         } else {
