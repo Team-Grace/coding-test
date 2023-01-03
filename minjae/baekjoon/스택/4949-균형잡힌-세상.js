@@ -11,14 +11,14 @@ rl.on("line", function (line) {
 }).on("close", function () {
   // 풀이
   const strList = input.slice(0, input.length - 1);
+  const bracketCompareObj = {
+    ")": "(",
+    "]": "[",
+  };
   let result = "";
 
   strList.forEach((str) => {
     const stack = [];
-    const bracketCompareObj = {
-      ")": "(",
-      "]": "[",
-    };
 
     for (const char of str) {
       // '(', '[' 케이스
