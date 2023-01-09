@@ -19,19 +19,16 @@ rl.on("line", function (line) {
       stack.push(value);
     },
     pop: () => {
-      if (!stack.length) result += "-1\n";
-      else result += `${stack.pop()}\n`;
+      result += stack.length ? `${stack.pop()}\n` : "-1\n";
     },
     size: () => {
       result += `${stack.length}\n`;
     },
     empty: () => {
-      if (!stack.length) result += "1\n";
-      else result += "0\n";
+      result += stack.length ? "0\n" : "1\n";
     },
     top: () => {
-      if (!stack.length) result += "-1\n";
-      else result += `${stack.at(-1)}\n`;
+      result += stack.length ? `${stack.at(-1)}\n` : "-1\n";
     },
   };
 
